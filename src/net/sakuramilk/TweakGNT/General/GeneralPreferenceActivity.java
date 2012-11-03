@@ -53,7 +53,7 @@ public class GeneralPreferenceActivity extends PreferenceActivity implements OnP
         mIoSched.setSummary(Misc.getCurrentValueText(this, curValue));
 
         mExternalSdBind = (CheckBoxPreference)findPreference(GeneralSetting.KEY_EXT_SD_BIND);
-        if (Misc.isFeatureAospEnabled()) {
+        if (true/*Misc.isFeatureAospEnabled()*/) {
             mExternalSdBind.setEnabled(true);
             mExternalSdBind.setChecked(SystemCommand.check_mount(Misc.getExtSdBindPath()));
             mExternalSdBind.setOnPreferenceChangeListener(this);

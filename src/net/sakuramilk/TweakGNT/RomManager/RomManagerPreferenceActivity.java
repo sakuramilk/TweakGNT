@@ -52,7 +52,6 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
     private ListPreference mNandroidManage;
     private PreferenceScreen mFlashInstallZip;
     private PreferenceScreen mPartitionBackup;
-    private PreferenceScreen mTimeAdjust;
 	private Context mContext;
 
     @Override
@@ -81,9 +80,6 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
 
         mPartitionBackup = (PreferenceScreen)findPreference("partition_backup");
         mPartitionBackup.setOnPreferenceClickListener(this);
-
-        mTimeAdjust = (PreferenceScreen)findPreference("time_adjust");
-        mTimeAdjust.setOnPreferenceClickListener(this);
     }
 
     @SuppressLint("HandlerLeak")
@@ -157,23 +153,12 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             Thread thread = new Thread(new Runnable() {
 				@Override
                 public void run() {
-                    SystemCommand.partition_backup_for_gs3(backupPath);
+                    SystemCommand.partition_backup_for_gnt(backupPath);
                     handler.sendEmptyMessage(0);
                 }
             });
             thread.start();
 
-        } else if (preference == mTimeAdjust) {
-            final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle(R.string.reboot);
-            alertDialogBuilder.setMessage(R.string.recovery_summary);
-            alertDialogBuilder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    SystemCommand.time_adjust_recovery();
-                }
-            });
-            alertDialogBuilder.setNegativeButton(android.R.string.no, null);
-            alertDialogBuilder.create().show();
         }
         return false;
     }

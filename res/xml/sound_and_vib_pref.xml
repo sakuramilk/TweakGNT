@@ -28,8 +28,8 @@
             android:title="@string/boot_sound">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetPackage="net.sakuramilk.TweakGS3"
-                android:targetClass="net.sakuramilk.TweakGS3.SoundAndVib.BootSoundPreferenceActivity" />
+                android:targetPackage="net.sakuramilk.TweakGNT"
+                android:targetClass="net.sakuramilk.TweakGNT.SoundAndVib.BootSoundPreferenceActivity" />
         </PreferenceScreen>
     </PreferenceCategory>
 

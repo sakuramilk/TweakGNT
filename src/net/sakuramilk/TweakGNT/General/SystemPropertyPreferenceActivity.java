@@ -35,8 +35,8 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
     private SeekBarPreference mLcdDensity;
     private CheckBoxPreference mCrtEffect;
 //    private CheckBoxPreference mLogger;
-//    private CheckBoxPreference mCifs;
-//    private CheckBoxPreference mNtfs;
+    private CheckBoxPreference mCifs;
+    private CheckBoxPreference mNtfs;
     private ListPreference mUsbConfig;
     private CheckBoxPreference mSwitchExtarnal;
     private SeekBarPreference mMusicVolumeSteps;
@@ -76,16 +76,16 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
 //        mLogger = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_LOGGER);
 //        mLogger.setChecked(value);
 //        mLogger.setOnPreferenceChangeListener(this);
+
+        value = mSetting.getCifs();
+        mCifs = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_CIFS);
+        mCifs.setChecked(value);
+        mCifs.setOnPreferenceChangeListener(this);
 //
-//        value = mSetting.getCifs();
-//        mCifs = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_CIFS);
-//        mCifs.setChecked(value);
-//        mCifs.setOnPreferenceChangeListener(this);
-//
-//        value = mSetting.getNtfs();
-//        mNtfs = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_NTFS);
-//        mNtfs.setChecked(value);
-//        mNtfs.setOnPreferenceChangeListener(this);
+        value = mSetting.getNtfs();
+        mNtfs = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_NTFS);
+        mNtfs.setChecked(value);
+        mNtfs.setOnPreferenceChangeListener(this);
 
         String strValue = mSetting.getUsbConfig(); 
         mUsbConfig = (ListPreference)findPreference(SystemPropertySetting.KEY_USB_CONFIG);
@@ -132,16 +132,16 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
 //            mSetting.setLogger(newValue);
 //            mLogger.setChecked(newValue);
 //            // not return true
-//        } else if (mCifs == preference) {
-//            boolean newValue = (Boolean)objValue;
-//            mSetting.setCifs(newValue);
-//            mCifs.setChecked(newValue);
-//            // not return true
-//        } else if (mNtfs == preference) {
-//            boolean newValue = (Boolean)objValue;
-//            mSetting.setNtfs(newValue);
-//            mNtfs.setChecked(newValue);
-//            // not return true
+        } else if (mCifs == preference) {
+            boolean newValue = (Boolean)objValue;
+            mSetting.setCifs(newValue);
+            mCifs.setChecked(newValue);
+            // not return true
+        } else if (mNtfs == preference) {
+            boolean newValue = (Boolean)objValue;
+            mSetting.setNtfs(newValue);
+            mNtfs.setChecked(newValue);
+            // not return true
         } else if (mUsbConfig == preference) {
             String newValue = objValue.toString();
             mSetting.setUsbConfig(newValue);

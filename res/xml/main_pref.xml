@@ -18,7 +18,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tweakGS3="http://schemas.android.com/apk/res/net.sakuramilk.TweakGS3"
+    xmlns:tweakGNT="http://schemas.android.com/apk/res/net.sakuramilk.TweakGNT"
     android:key="parent"
     android:title="@string/app_long_name">
 
@@ -28,8 +28,8 @@
         android:icon="@drawable/ic_settings_applications">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.General.GeneralPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.General.GeneralPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- RomManager -->
@@ -38,8 +38,8 @@
         android:icon="@drawable/ic_settings_cmdevice">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.RomManager.RomManagerPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.RomManager.RomManagerPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- CpuControl -->
@@ -48,8 +48,8 @@
         android:icon="@drawable/ic_settings_cpu">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.CpuControl.CpuControlPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.CpuControl.CpuControlPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- Sound and Vibrator -->
@@ -58,8 +58,8 @@
         android:icon="@drawable/ic_settings_sound">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.SoundAndVib.SoundAndVibPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.SoundAndVib.SoundAndVibPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- Display -->
@@ -68,21 +68,19 @@
         android:icon="@drawable/ic_settings_display">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.Display.DisplayPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.Display.DisplayPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- Notification -->
-    <!--
     <PreferenceScreen
         android:title="@string/notification_title"
         android:icon="@drawable/ic_settings_notification">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.Notification.NotificationPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.Notification.NotificationPreferenceActivity" />
     </PreferenceScreen>
-    -->
 
     <!-- Dock -->
     <PreferenceScreen
@@ -90,8 +88,8 @@
         android:icon="@drawable/ic_settings_dock">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.Dock.DockPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.Dock.DockPreferenceActivity" />
     </PreferenceScreen>
 
     <!-- About -->
@@ -100,8 +98,8 @@
         android:icon="@drawable/ic_settings_about">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="net.sakuramilk.TweakGS3"
-            android:targetClass="net.sakuramilk.TweakGS3.About.AboutPreferenceActivity" />
+            android:targetPackage="net.sakuramilk.TweakGNT"
+            android:targetClass="net.sakuramilk.TweakGNT.About.AboutPreferenceActivity" />
     </PreferenceScreen>
 
 </PreferenceScreen>

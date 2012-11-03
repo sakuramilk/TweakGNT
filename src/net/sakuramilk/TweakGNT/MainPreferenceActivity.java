@@ -99,7 +99,7 @@ public class MainPreferenceActivity extends PreferenceActivity {
             Thread thread = new Thread(new Runnable() {
 				@Override
                 public void run() {
-                    SystemCommand.partition_backup_for_gs3(backupPath);
+                    SystemCommand.partition_backup_for_gnt(backupPath);
                     handler.sendEmptyMessage(0);
                 }
             });

@@ -64,8 +64,8 @@
             android:title="@string/cpu_voltage_title">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetPackage="net.sakuramilk.TweakGS3"
-                android:targetClass="net.sakuramilk.TweakGS3.CpuControl.CpuVoltagePreferenceActivity" />
+                android:targetPackage="net.sakuramilk.TweakGNT"
+                android:targetClass="net.sakuramilk.TweakGNT.CpuControl.CpuVoltagePreferenceActivity" />
         </PreferenceScreen>
         <CheckBoxPreference
             android:key="cpu_volt_set_on_boot"

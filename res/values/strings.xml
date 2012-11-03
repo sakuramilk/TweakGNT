@@ -19,8 +19,8 @@
 <resources>
 
     <!-- Common -->
-    <string name="app_name">TweakGS3</string>
-    <string name="app_long_name">Tweak Galaxy S3</string>
+    <string name="app_name">TweakGNT</string>
+    <string name="app_long_name">Tweak Galaxy Note</string>
     <string name="current_value">Current:</string>
     <string name="saved_value">Saved:</string>
     <string name="go_back">Go back</string>
@@ -97,6 +97,9 @@
     <string name="gsm_network_tweak_title">3G network tweak</string>
     <string name="gsm_network_tweak_summary_on">3G network tweak enabled\nNotice: Take effect after reboot</string>
     <string name="gsm_network_tweak_summary_off">3G network tweak disabled\nNotice: Take effect after reboot</string>
+    <string name="external_sd_bind_title">External sdcard bind</string>
+    <string name="external_sd_bind_summary_on">External sdcard mount to /sdcard/external_sd\nCurrent state is mounted</string>
+    <string name="external_sd_bind_summary_off">External sdcard mount to /sdcard/external_sd\nCurrent state is not mounted</string>
     <string name="sysprop_boot_sound_title">Boot sound</string>
     <string name="sysprop_boot_sound_summary_on">Boot sound enabled</string>
     <string name="sysprop_boot_sound_summary_off">Boot sound disabled</string>
@@ -229,6 +232,9 @@
     <string name="notification_bln_on_incoming_title">BLN on incoming</string>
     <string name="notification_bln_on_incoming_summary_on">BLN on incoming enabled</string>
     <string name="notification_bln_on_incoming_summary_off">BLN on incoming disabled</string>
+    <string name="notification_bln_test">Notification test</string>
+    <string name="notification_bln_test_notify_title">Notification test</string>
+    <string name="notification_bln_test_notify_summary">Please check the operation of the notification to the display OFF</string>
 
     <!-- Dock -->
     <string name="dock_title">Dock setting</string>
@@ -242,8 +248,8 @@
     <string name="dock_manual_stop">Stop dock mode</string>
 
     <!-- About -->
-    <string name="about_title">About TweakGS3</string>
-    <string name="about_check_update_title">Check for update TweakGS3</string>
+    <string name="about_title">About TweakGNT</string>
+    <string name="about_check_update_title">Check for update TweakGNT</string>
     <string name="about_check_update_summary">This is a paid version to accept the donation. Without a donation, it is also possible to use the free version</string>
     <string name="all_recommend_title">Recommended Settings</string>
     <string name="all_recommend_summary">Recommended to set the value of all items</string>

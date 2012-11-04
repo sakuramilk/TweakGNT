@@ -22,7 +22,7 @@ import net.sakuramilk.util.SystemCommand;
 public class TweakPropery extends PropertyManager {
 
     public TweakPropery() {
-        super("/data/TweakGNT.prop");
+        super("/data/tweakgnt.prop");
 
         // if not exists, create prop file.
         if (!mFile.exists()) {

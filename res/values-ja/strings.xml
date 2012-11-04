@@ -127,6 +127,12 @@
     <string name="sysprop_scrolling_cache_title">スクロールキャッシュ</string>
     <string name="sysprop_scrolling_cache_summary_on">スクロールキャッシュは有効</string>
     <string name="sysprop_scrolling_cache_summary_off">スクロールキャッシュは無効</string>
+    <string name="sysprop_bottom_action_bar_title">アクションバー位置</string>
+    <string name="sysprop_bottom_action_bar_summary_on">アクションバーを下部に設定</string>
+    <string name="sysprop_bottom_action_bar_summary_off">アクションバーを上部に設定</string>
+    <string name="sysprop_replace_menu_back_title">Menu/Backキーの入れ替え</string>
+    <string name="sysprop_replace_menu_back_summary_on">Menu/Backキーの入れ替えは有効</string>
+    <string name="sysprop_replace_menu_back_summary_off">Menu/Backキーの入れ替えは無効</string>
 
     <!-- Multi boot -->
     <string name="multi_boot_title">マルチブート設定</string>

@@ -100,6 +100,9 @@
     <string name="external_sd_bind_title">External sdcard bind</string>
     <string name="external_sd_bind_summary_on">External sdcard mount to /sdcard/external_sd\nCurrent state is mounted</string>
     <string name="external_sd_bind_summary_off">External sdcard mount to /sdcard/external_sd\nCurrent state is not mounted</string>
+    <string name="replace_key_title">Replace back / menu key</string>
+    <string name="replace_key_summary_on">Replace back / menu key enabled</string>
+    <string name="replace_key_summary_off">Replace back / menu key disabled</string>
     <string name="sysprop_boot_sound_title">Boot sound</string>
     <string name="sysprop_boot_sound_summary_on">Boot sound enabled</string>
     <string name="sysprop_boot_sound_summary_off">Boot sound disabled</string>
@@ -133,9 +136,6 @@
     <string name="sysprop_bottom_action_bar_title">Bottom action bar</string>
     <string name="sysprop_bottom_action_bar_summary_on">Bottom action bar enabled</string>
     <string name="sysprop_bottom_action_bar_summary_off">Bottom action bar disabled</string>
-    <string name="sysprop_replace_menu_back_title">Replace Menu/Back</string>
-    <string name="sysprop_replace_menu_back_summary_on">Replace Menu/Back enabled</string>
-    <string name="sysprop_replace_menu_back_summary_off">Replace Menu/Back disabled</string>
 
     <!-- Multi Boot -->
     <string name="multi_boot_title">Multi boot setting</string>

@@ -42,7 +42,6 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
     private SeekBarPreference mMusicVolumeSteps;
     private CheckBoxPreference mScrollingCache;
     private CheckBoxPreference mBottomActionBar;
-    private CheckBoxPreference mReplaceMenuBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,11 +115,6 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
         mBottomActionBar = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_BOTTOM_ACTION_BAR);
         mBottomActionBar.setChecked(value);
         mBottomActionBar.setOnPreferenceChangeListener(this);
-        
-        value = mSetting.getReplaceMenuBack();
-        mReplaceMenuBack = (CheckBoxPreference)findPreference(SystemPropertySetting.KEY_REPLACE_MENU_BACK);
-        mReplaceMenuBack.setChecked(value);
-        mReplaceMenuBack.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -174,11 +168,6 @@ public class SystemPropertyPreferenceActivity extends PreferenceActivity
             boolean newValue = (Boolean)objValue;
             mSetting.setBottomActionBar(newValue);
             mBottomActionBar.setChecked(newValue);
-            // not return true
-        } else if (mReplaceMenuBack == preference) {
-            boolean newValue = (Boolean)objValue;
-            mSetting.setReplaceMenuBack(newValue);
-            mReplaceMenuBack.setChecked(newValue);
             // not return true
         }
         return false;

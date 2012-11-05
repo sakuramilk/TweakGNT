@@ -80,9 +80,4 @@
         android:title="@string/sysprop_bottom_action_bar_title"
         android:summaryOn="@string/sysprop_bottom_action_bar_summary_on"
         android:summaryOff="@string/sysprop_bottom_action_bar_summary_off" />
-    <CheckBoxPreference
-        android:key="sysprop_replace_menu_back"
-        android:title="@string/sysprop_replace_menu_back_title"
-        android:summaryOn="@string/sysprop_replace_menu_back_summary_on"
-        android:summaryOff="@string/sysprop_replace_menu_back_summary_off" />
 </PreferenceScreen>

@@ -20,6 +20,7 @@ import java.io.File;
 
 import android.content.Context;
 
+import net.sakuramilk.util.Convert;
 import net.sakuramilk.util.Misc;
 import net.sakuramilk.util.RootProcess;
 import net.sakuramilk.util.SettingManager;
@@ -31,9 +32,12 @@ public class GeneralSetting extends SettingManager {
     public static final String KEY_IO_SCHED = "iosched_type";
     public static final String KEY_GSM_NETWORK_TWEAK = "gsm_network_tweak";
     public static final String KEY_EXT_SD_BIND = "external_sd_bind";
+    public static final String KEY_REPLACE_KEY = "replace_key";
     
     private static final String PATH_IO_SCHED_MMC0 = "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/scheduler";
     private final SysFs mSysFsIoSheduler = new SysFs(PATH_IO_SCHED_MMC0);
+
+    public final SysFs mSysFsReplaceKey = new SysFs("/sys/devices/virtual/sec/sec_touchkey/touchkey_replace_back_menu");
 
     public GeneralSetting(Context context, RootProcess rootProcess) {
         super(context, rootProcess);
@@ -98,6 +102,25 @@ public class GeneralSetting extends SettingManager {
         return getBooleanValue(KEY_EXT_SD_BIND, false);
     }
 
+    public boolean isEnableReplaceKey() {
+    	return mSysFsReplaceKey.exists();
+    }
+    public boolean getReplaceKey() {
+    	return Convert.toBoolean(mSysFsReplaceKey.read(null));
+    }
+    
+    public void setReplaceKey(boolean value) {
+    	mSysFsReplaceKey.write(Convert.toString(value), null);
+    }
+
+    public boolean loadReplaceKey() {
+        return getBooleanValue(KEY_REPLACE_KEY, false);
+    }
+    
+    public void saveReplaceKey(boolean value) {
+        setValue(KEY_REPLACE_KEY, value);
+    }
+
     @Override
     public void setOnBoot() {
         String value = loadIoScheduler();
@@ -106,6 +129,9 @@ public class GeneralSetting extends SettingManager {
         }
         if (loadGsmNetworkTweak()) {
             SystemCommand.gsm_network_tweak();
+        }
+        if (isEnableReplaceKey()) {
+        	setReplaceKey(loadReplaceKey());
         }
     }
 
@@ -138,5 +164,6 @@ public class GeneralSetting extends SettingManager {
         clearValue(KEY_IO_SCHED);
         clearValue(KEY_GSM_NETWORK_TWEAK);
         clearValue(KEY_EXT_SD_BIND);
+        clearValue(KEY_REPLACE_KEY);
     }
 }

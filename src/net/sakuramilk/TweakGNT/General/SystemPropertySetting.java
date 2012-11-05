@@ -35,7 +35,6 @@ public class SystemPropertySetting extends SettingManager {
     public static final String KEY_MUSIC_VOLUME_STEPS = "sysprop_music_volume_steps";
     public static final String KEY_SCROLLING_CACHE = "sysprop_scrolling_cache";
     public static final String KEY_BOTTOM_ACTION_BAR = "sysprop_bottom_action_bar";
-    public static final String KEY_REPLACE_MENU_BACK = "sysprop_replace_menu_back";
 
     private final TweakPropery mTweakPorp = new TweakPropery();
 
@@ -161,15 +160,6 @@ public class SystemPropertySetting extends SettingManager {
 
     public void setBottomActionBar(boolean value) {
     	mTweakPorp.setValue("ro.tweak.bottom_actionbar", (value ? "1" : "0"));
-    }
-
-    public boolean getReplaceMenuBack() {
-        String ret = mTweakPorp.getValue("ro.tweak.replace_menu_back", "0");
-        return "0".equals(ret) ? false : true;
-    }
-
-    public void setReplaceMenuBack(boolean value) {
-    	mTweakPorp.setValue("ro.tweak.replace_menu_back", (value ? "1" : "0"));
     }
 
     @Override

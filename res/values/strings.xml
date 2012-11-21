@@ -19,8 +19,8 @@
 <resources>
 
     <!-- Common -->
-    <string name="app_name">TweakGNT</string>
-    <string name="app_long_name">Tweak Galaxy Note</string>
+    <string name="app_name">TweakGNTLTE</string>
+    <string name="app_long_name">Tweak Galaxy Note and LTE</string>
     <string name="current_value">Current:</string>
     <string name="saved_value">Saved:</string>
     <string name="go_back">Go back</string>
@@ -136,6 +136,9 @@
     <string name="sysprop_bottom_action_bar_title">Bottom action bar</string>
     <string name="sysprop_bottom_action_bar_summary_on">Bottom action bar enabled</string>
     <string name="sysprop_bottom_action_bar_summary_off">Bottom action bar disabled</string>
+    <string name="sysprop_bottom_title_bar_title">Bottom title bar</string>
+    <string name="sysprop_bottom_title_bar_summary_on">Bottom title bar enabled</string>
+    <string name="sysprop_bottom_title_bar_summary_off">Bottom title bar disabled</string>
     <string name="sysprop_status_bar_icon_alpha_title">Status bar icon aplha</string>
     <string name="sysprop_status_bar_icon_alpha_summary_on">Status bar icon aplha enabled</string>
     <string name="sysprop_status_bar_icon_alpha_summary_off">Status bar icon aplha disabled</string>
@@ -258,8 +261,8 @@
     <string name="dock_manual_stop">Stop dock mode</string>
 
     <!-- About -->
-    <string name="about_title">About TweakGNT</string>
-    <string name="about_check_update_title">Check for update TweakGNT</string>
+    <string name="about_title">About TweakGNTLTE</string>
+    <string name="about_check_update_title">Check for update TweakGNTLTE</string>
     <string name="about_check_update_summary">This is a paid version to accept the donation. Without a donation, it is also possible to use the free version</string>
     <string name="all_recommend_title">Recommended Settings</string>
     <string name="all_recommend_summary">Recommended to set the value of all items</string>

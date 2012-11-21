@@ -138,7 +138,7 @@ public class RomManagerPreferenceActivity extends PreferenceActivity
             dlg.setMessage(getText(R.string.partitiion_backup_progress));
             dlg.show();
 
-            String backupDir = Misc.getSdcardPath(true) + Config.TGNT_BACKUP_DIR;
+            String backupDir = Misc.getSdcardPath(true) + Config.getBackupDir();
             final String backupPath = backupDir + "/" + Misc.getDateString();
             
             final Handler handler = new Handler() {

@@ -73,9 +73,9 @@ public class MainPreferenceActivity extends PreferenceActivity {
         }
 
         // auto backup
-        String backupDir = Misc.getSdcardPath(true) + Config.TGNT_BACKUP_DIR;
+        String backupDir = Misc.getSdcardPath(true) + Config.getBackupDir();
         File file = new File(backupDir);
-        if (!file.exists() && Config.checkDevice()) {
+        if (!file.exists() && Config.checkDevice() != Config.DEVICE_UNKNOWN) {
             PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);
             final WakeLock wakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "TweekBackupWakeLock");
             wakeLock.acquire();

@@ -133,6 +133,9 @@
     <string name="sysprop_bottom_action_bar_title">アクションバー位置</string>
     <string name="sysprop_bottom_action_bar_summary_on">アクションバーを下部に設定</string>
     <string name="sysprop_bottom_action_bar_summary_off">アクションバーを上部に設定</string>
+    <string name="sysprop_bottom_title_bar_title">タイトルバー位置</string>
+    <string name="sysprop_bottom_title_bar_summary_on">タイトルバーを下部に設定</string>
+    <string name="sysprop_bottom_title_bar_summary_off">タイトルバーを上部に設定</string>
     <string name="sysprop_status_bar_icon_alpha_title">ステータスバーアイコン透過処理</string>
     <string name="sysprop_status_bar_icon_alpha_summary_on">ステータスバーアイコン透過処理は有効</string>
     <string name="sysprop_status_bar_icon_alpha_summary_off">ステータスバーアイコン透過処理は無効</string>
@@ -246,8 +249,8 @@
     <string name="dock_manual_stop">Dockモードを終了します</string>
 
     <!-- About -->
-    <string name="about_title">TweakGNTについて</string>
-    <string name="about_check_update_title">TweakGNTの更新を確認</string>
+    <string name="about_title">TweakGNTLTEについて</string>
+    <string name="about_check_update_title">TweakGNTLTEの更新を確認</string>
     <string name="about_check_update_summary">これは寄付を受け付けるための有料版です。寄付を行わず無料版を利用することも可能です</string>
     <string name="all_recommend_title">おすすめ設定</string>
     <string name="all_recommend_summary">全ての項目におすすめの値を設定します</string>

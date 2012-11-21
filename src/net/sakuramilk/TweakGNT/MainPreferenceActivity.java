@@ -25,7 +25,9 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
@@ -70,6 +72,10 @@ public class MainPreferenceActivity extends PreferenceActivity {
                 pref.setEnabled(true);
                 pref.setSelectable(true);
             }
+        }
+        
+        if (Build.VERSION.SDK_INT <= 15 && Config.DEVICE_SC03D == Config.checkDevice()) {
+        	Misc.IsInternalSdcardRerverse = true;
         }
 
         // auto backup

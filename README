@@ -1,5 +1,5 @@
 
-  *** TweakGNTLTE V0.2.4 ****
+  *** TweakGNTLTE V0.2.5 ****
 
   SC-05D (Galaxy Note) & SC-03D (Galaxy S2 LTE)の設定アプリです
   要root
@@ -29,6 +29,8 @@
 
 
 　■更新履歴
+    V0.2.5    SC-03DのCM9でSDカード判定が逆になる不具合に対応
+
     V0.2.4    対応機種にSC-03Dを追加
 
     V0.2.3    タイトルバーの下部表示切り替え
